@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff914d;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ffb482;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.featured-recipes {
+    padding: 2rem;
+    text-align: center;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.recipe-card button {
+    background-color: #ff914d;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recipe-card button:hover {
+    background-color: #ffb482;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ff914d;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Recipe Detail Page */
+.recipe-detail {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.recipe-detail h2 {
+    margin-top: 1.5rem;
+}
+
+.recipe-detail ul, .recipe-detail ol {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+/* Submit Recipe Page */
+.submit-recipe-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submit-recipe-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.submit-recipe-container input,
+.submit-recipe-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-recipe-container button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #ff914d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-recipe-container button:hover {
+    background-color: #ffb482;
+}
+
+nav ul li button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li button:hover {
+    background-color: #ffb482;
+}
+
+.stay-tuned {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ff914d;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.stay-tuned p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.weekly-updates {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.btn-favourite {
+    background-color: #ff914d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-favourite:hover {
+    background-color: #ffb482;
+    transform: scale(1.05);
+}
+
+.btn-favourite:active {
+    background-color: #ff9f6b;
+    transform: scale(1);
+}
+
+.added-message {
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Center the "Add to Favourites" button */
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; /* Add some space from the recipe details */
+}
+
+.center-button button {
+    background-color: #ff914d;
+    border: none;
+    color: white;
+    padding: 0.7rem 1.5rem;  /* Adjust the padding for a better button size */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.center-button button:hover {
+    background-color: #ffb482;
+}
+
+.btn-delete {
+    background-color: #ff4d4d; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #ff1a1a;
+}
+
+.btn-delete:active {
+    background-color: #ff0000;
+}
+
+/* Enhanced Link Styling for Favourite Recipes */
+.favourites-list a {
+    display: inline-block;              
+    background-color: #ff914d;           
+    color: white;                      
+    padding: 0.7rem 1.5rem;              
+    border-radius: 5px;                 
+    font-weight: bold;                   
+    text-decoration: none;               
+    transition: background-color 0.3s, transform 0.3s; 
+    margin: 0.5rem 0;                    
+}
+
+/* Hover effect to change background and scale */
+.favourites-list a:hover {
+    background-color: #ffb482;           /* Lighter background color */
+    transform: scale(1.05);              /* Slightly larger on hover */
+}
+
+/* Active state for a more pressed effect */
+.favourites-list a:active {
+    background-color: #ff9f6b;           /* Darker color when clicked */
+    transform: scale(1);                 /* Reset size */
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #ff4d4d; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 1rem;  /* Spacing between the link and the button */
+}
+
+.btn-delete:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+
+.btn-delete:active {
+    background-color: #ff0000;
+    transform: scale(1);
+}
+
+.message {
+    color: #28a745; /* Green color for success message */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
